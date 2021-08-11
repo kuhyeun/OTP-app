@@ -1,0 +1,20 @@
+<resources>
+  <string name="app_name">OtpProject</string>
+  <string name="notification_pref">NotificationPref</string>
+  <string name="notification_key">NotificationKey</string>
+
+  <string name="channel">OTP_Channel</string>
+  <string name="channel_name">OTP 알림 수신</string>
+  <string name="channel_description"> 로그인 시도 후 알림을 받습니다</string>
+
+  <string name="menu_title">OTP 보안인증</string>
+  <string name="menu_setting">설정</string>
+
+  <string name="errorEmptyAccount">아이디를 입력하세요</string>
+  <string name="errorNetworkCancel">네트워크 연결상태를 확인하세요</string>
+  <string name="errorLoginAccount">계정정보가 일치하지않습니다</string>
+  <string name="errorDeviceUpdate">디바이스 키가 정상적으로 등록되지않았습니다</string>
+  <string name="logout">로그아웃 되었습니다</string>
+  <string name="buttonClose">닫기</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/mainToolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?android:actionBarSize"
+      android:background="@color/mainColor">
+
+    <TextView
+        android:id="@+id/toolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+  </androidx.appcompat.widget.Toolbar>
+
+  <include
+      android:id="@+id/webViewProgress"
+      layout="@layout/webview_progress"
+      android:visibility="gone"/>
+
+  <LinearLayout
+      android:id="@+id/emptyLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:gravity="center">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_security_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="로그인 요청 없음"
+        android:textSize="30sp"
+        android:textColor="@color/black" />
+
+  </LinearLayout>
+
+  <WebView
+      android:id="@+id/webView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone">
+  </WebView>
+
+</LinearLayout>

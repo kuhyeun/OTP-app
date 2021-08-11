@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+  <ScrollView
+      android:id="@+id/scroll"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="16dp"
+          android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/loginId"
+            style="@style/EditTextStyle"
+            android:hint="ID"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress|textUri"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:privateImeOptions="defaultInputmode=english" />
+
+      </LinearLayout>
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="16dp">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:text="LOGIN"
+            android:textStyle="bold"
+            android:background="@drawable/ripple_custom"
+            android:visibility="visible"/>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:indeterminateDrawable="@drawable/circle_progress"
+            android:indeterminateDuration="1000"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+      </FrameLayout>
+
+
+
+    </LinearLayout>
+  </ScrollView>
+
+</RelativeLayout>
